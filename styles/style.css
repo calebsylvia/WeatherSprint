@@ -1,0 +1,51 @@
+/* Universal */
+@font-face {
+    font-family: 'Kdam Thmor';
+    src: url(/fonts/Kdam\ Thmor\ Regular.ttf) format(truetype);
+}
+
+/* Navbar */
+
+nav {
+    background-color: #212A79;
+}
+
+.searchShape {
+    border-radius: 30px !important;
+    width: 100px 
+}
+
+/* Weather App Body */
+
+.skyBg {
+    background-image: url(/assets/cloudyskygif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.currentBox {
+    background-color: #CAE8FF;
+    border-radius: 10px;
+    opacity: 80%;
+    width: 50%;
+}
+
+.currentInfoBox {
+    background-color: #CAE8FF;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+/* Cards */
+
+.card{
+    background-color: #CAE8FF;
+    height: 150px;
+    opacity: 80%;
+}
+
+.card-text, .card-title {
+    color:#212A79;
+    font-family: 'Kdam Thmor', sans-serif;
+}
