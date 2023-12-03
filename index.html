@@ -22,31 +22,32 @@
         <a class="navbar-brand" href="#">
           <img src="./assets/Consulting.png" alt="Bootstrap" width="75px" height="75px">
         </a>
-        <i class="fa-solid fa-location-dot" style="color: #cae8ff;"></i>
+        
         <form class="d-flex" role="search">
+          <i class="fa-solid fa-location-dot" style="color: #cae8ff;"></i>
           <input class="form-control me-2 searchShape" type="search" placeholder="Enter city..." aria-label="Search">
         </form>
       </div>
     </nav>
 
     <!-- Main body -->
-    <div class="container-fluid skyBg">
+    <div class="container-fluid containBox">
       <div class="row">
 
       </div>
       <div class="row">
-        <div class="col">
-          <div class="container-fluid currentBox">
+        <div class="col-3">
+          <div class="container-fluid currentBox h-100">
             <div class="row">
               <div class="col">
-                <h4 id="cityName">Stockton, CA</h4>
-                <h1>63&deg; F</h1>
+                <h5 id="cityName">Stockton, CA</h5>
+                <h3>63&deg; F</h3>
               </div>
               <div class="col">
                 <p id="highLow">High: 63&deg; <br>Low: 33&deg;</p>
               </div>
               <div class="col">
-                <i class="fa-regular fa-star" style="color: #212a79;"></i>
+                <i id="favBtn" class="fa-regular fa-star"></i>
               </div>
             </div>
             <div class="row weatherIcon">
@@ -55,26 +56,64 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-8">
           <div class="container-fluid currentInfoBox h-100">
           <div class="col">
             <div class="row">
-              <i class="fa-solid fa-umbrella" style="color: #212a79;"></i>
-
+              <div class="col-1">
+              <i class="fa-solid fa-umbrella fa-2xl downLine"></i>
+            </div>
+            <div class="col pl-0">
+              <h5 class="infoText">Precipitation:</h5>
+              <h5 class="infoText">0%</h5>
+            </div>
             </div>
             <div class="row">
-
+              <div class="col-1">
+              <i class="fa-solid fa-wind fa-2xl downLine"></i>
+            </div>
+            <div class="col">
+              <h5 class="infoText">Wind:</h5>
+              <h5 class="infoText">South 3 mph</h5>
+            </div>
             </div>
             <div class="row">
-
+              <div class="col-1">
+              <i class="fa-solid fa-droplet fa-2xl downLine"></i>
+            </div>
+            <div class="col">
+              <h5 class="infoText">Humidity:</h5>
+              <h5 class="infoText">30%</h5>
+            </div>
             </div>
           </div>
-          <div class="col">
-
+          <div class="col textColor">
+              <div class="row">
+                <!-- Map will go here using google maps + openweather API -->
+                </div>
+              <div class="row">
+                <div class="col">
+                  <h5>Lat: 37.9</h5>
+                </div>
+                <div class="col">
+                  <h5>Lon: -121.2</h5>
+                </div>
+              </div>
+              <div class="row"> 
+                <div class="col">
+                  <img src="./assets/sunrise.png" alt="Sunrise" width="60px">
+                  <h5>Sunrise: 6:59</h5>
+                </div>
+                <div class="col">
+                  <img src="./assets/moon.png" alt="Sunset Moon" width="45px">
+                  <h5>Sunset: 16:46</h5>
+                </div>  
+              </div>
           </div>
         </div>
       </div>
       </div>
+
       <div class="row cardRow mx-auto">
         <div class="col">
           <div class="card text-center mb-3" style="width: 8rem;">

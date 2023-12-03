@@ -3,7 +3,12 @@
     font-family: 'Kdam Thmor';
     src: url(/fonts/Kdam\ Thmor\ Regular.ttf) format(truetype);
 }
-
+body{
+    background-image: url(/assets/cloudyskygif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /* Navbar */
 
 nav {
@@ -12,23 +17,22 @@ nav {
 
 .searchShape {
     border-radius: 30px !important;
-    width: 100px 
+    height: 25px;
 }
 
 /* Weather App Body */
 
-.skyBg {
-    background-image: url(/assets/cloudyskygif.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+
+.containBox{
+    margin: 0px 25px 0px 25px !important;
 }
 
 .currentBox {
     background-color: #CAE8FF;
     border-radius: 10px;
     opacity: 80%;
-    width: 50%;
+    color:#212A79;
 }
 
 .currentInfoBox {
@@ -37,6 +41,19 @@ nav {
     opacity: 80%;
 }
 
+.infoText{
+    padding-left: 70px;
+    color: #212A79;
+}
+
+.downLine{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.textColor{
+    color: #212A79;
+}
 /* Cards */
 
 .card{
