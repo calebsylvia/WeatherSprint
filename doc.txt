@@ -14,3 +14,21 @@ Second commit (12/1/23):
     -Style to match Figma prototype
     -Start working into API data and display on live server webpage
     -Find images to use for current weather box because FontAwesome does not allow bigger than 2xl normal size
+
+Third Commit(12/2/23):
+    -Go majority of the layout done just needs some fixes to some sections
+    -Imported some images for sunset and sunrise 
+    -Current Weather and Info boxes set up just need contents to be fixed
+    -Looked into API for map going to use the Google Map API paired with Open Weather API to display the location on page
+    -Created the rest of the columns and rows needed to set up page just need to implement the corresponding contents
+    -Set up one variable for the favBtn...
+    
+    TO-DO for next session:
+    -Finish set up fully then dive into the API and Javascript of the project 
+    -Set up JSON to hold images for the different types of weather displayed on Current Weather box
+    -Align everything properly 
+    -Resize some of the fonts and scale everything up by some to make it fit screen size and be proportional
+    -Stop being lazy, stay off phone, and get to work
+    -Look into local storage for favorites for the user to keep their favorites locations
+    -Figure out how to add citys to favorite and create a template for a favorite card to be help within the favorites tab
+    -Figure out how to create the favorites tab and design to match the Figma prototype
