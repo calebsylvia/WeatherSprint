@@ -4,3 +4,86 @@
 # Weather Sprint 1
 # Made a weather app that pulls the data from the openweatherAPI to show the weather for current or requested location
 # Peer review:
+
+
+
+
+
+
+
+
+
+
+Progress Reports-
+First commit (11/28/23):
+    -Set up pages for website using Bootstrap boilerplate and created folders for corresponding files: styles, scripts, assets
+    -Made .gitignore as well as a key.js file to keep keys confidential
+    -ReadME.md was also created with basic set up to match Guidelines
+
+Second commit (12/1/23):
+    -Set up parts of HTML and styled using CSS as well as importing our background image 
+    -Imported the "Kdam Thmor" font from local machine 
+    -Set up doc.txt to keep track of documentation for project 
+    -Imported FontAwesome js script to access icons for weather 
+
+    TO-DO for next session:     
+    -Finish setting up whole page
+    -Style to match Figma prototype
+    -Start working into API data and display on live server webpage
+    -Find images to use for current weather box because FontAwesome does not allow bigger than 2xl normal size
+
+Third Commit(12/2/23):
+    -Got majority of the layout done just needs some fixes to some sections
+    -Imported some images for sunset and sunrise 
+    -Current Weather and Info boxes set up just need contents to be fixed
+    -Looked into API for map going to use the Google Map API paired with Open Weather API to display the location on page
+    -Created the rest of the columns and rows needed to set up page just need to implement the corresponding contents
+    -Set up one variable for the favBtn...
+    
+    TO-DO for next session:
+    -Finish set up fully then dive into the API and Javascript of the project 
+    -Set up JSON to hold images for the different types of weather displayed on Current Weather box
+    -Align everything properly 
+    -Resize some of the fonts and scale everything up by some to make it fit screen size and be proportional
+    -Stop being lazy, stay off phone, and get to work
+    -Look into local storage for favorites for the user to keep their favorites locations
+    -Figure out how to add citys to favorite and create a template for a favorite card to be help within the favorites tab
+    -Figure out how to create the favorites tab and design to match the Figma prototype
+
+Fourth Commit(12/3/23):
+    -Got all IDs set up for HTML elements and got them linked into the JS files
+    -Added a seperate file for the 5 day forecast since it uses a seperate API call from a different URL within openweather API
+    -Set up a JSON file to hold the images that will display the current state of weather on main box
+    -Imported all types of images for the different states of weather
+    -More styling done to the page still need to perfect it but everything is on the page and ready to go
+    -Set up geolocation built in API to test if it works properly now displays current users longitude and latitude
+    -Longitude and Latitude is now rounded so it doesn't hold 7 decimal places and now only holds 3 to be more appealing
+    -Got border for the map set up now just needs map to be inserted
+    -Tied the forecast.js file to HTML
+    -Found out that Kdam Thmor is not a font that is in english and figma sets default to inter so to maintain in coordination with the Figma I changed the font for the whole page to be inter
+
+    TO-DO for next session:
+    -Do everything you have been saying you have been needing to do
+    -Get rest of Weather data implemented and displayed on webpage
+    -Try and get to the map API and setting up the 5 day forecase
+    -Finish styling the page
+    -Take a couple more breaks so your eyes don't strain
+    -Figure out how to implement the search bar to autocomplete with cities and call the API to pull the data for corresponding city
+    -Find out how to add the favorites tab you keep putting it off
+    -Line up pin next to search bar
+    -Fix logo the colors are off
+
+Fifth Commit(12/4/23):
+    -Pulled all data from APIs and got them running in console
+    -Removed some unecessary files and moved this doc into the README.md
+    -Set up async function in the forecast.js and it is now displaying data until I implement the data into the actual page
+    -Finished my evaluations
+    -Looked into Google Map API and it's asking me to put in card info so now looking into free version without card info in the mean time
+    -Went back over figma to make sure I am pulling correct data and looked into openweather API to figure out what data I need
+    -Hosted webpage on Vercel
+
+    TO-DO for next session:
+    -Finish implementing all data from the APIs 
+    -Find way to implement map into the webpage
+    -Get lowest and highest temps from the 5 day forecast API since they only display for each time frame
+    -Find out how to convert into standard time from the UNIX that the API displays in the console

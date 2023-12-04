@@ -1,4 +1,4 @@
-// import { weatherKey } from "./keys";
+import { weatherKey } from "./keys.js";
 
 // Display days variables
 let day1 = document.getElementById("day1");
@@ -21,4 +21,13 @@ let day3HL = document.getElementById("day3HL");
 let day4HL = document.getElementById("day4HL");
 let day5HL = document.getElementById("day5HL");
 
-//fetch(`api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${weatherKey}`);
+
+navigator.geolocation.getCurrentPosition(forecastCall);
+
+async function forecastCall(position){
+    const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=${weatherKey}`);
+    const data = await promise.json();
+    console.log(data);
+}
+
+forecastCall();
