@@ -1,0 +1,37 @@
+
+{
+  "icons": [
+    {
+      "name": "night",
+      "picture": "./assets/moon.png"
+    },
+    {
+      "name": "sunny",
+      "picture": "./assets/sun.png"
+    },
+    {
+      "name": "rain",
+      "picture": "./assets/rainy.png"
+    },
+    {
+      "name": "cloudy",
+      "picture": "./assets/cloudy"
+    },
+    {
+      "name": "overcast",
+      "picture": "./assets/cloud.png"
+    },
+    {
+      "name": "snow",
+      "picture": "./assets/snowflake.png"
+    },
+    {
+      "name": "storm",
+      "picture": "./assets/storm.png"
+    },
+    {
+      "name": "windy",
+      "picture": "./assets/wind.png"
+    }
+  ]
+}

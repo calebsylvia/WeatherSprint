@@ -1,8 +1,5 @@
 /* Universal */
-@font-face {
-    font-family: 'Kdam Thmor';
-    src: url(/fonts/Kdam\ Thmor\ Regular.ttf) format(truetype);
-}
+
 body{
     background-image: url(/assets/cloudyskygif.gif);
     background-repeat: no-repeat;
@@ -20,19 +17,35 @@ nav {
     height: 25px;
 }
 
+.fixMarg{
+    margin: 0px 25px !important;
+}
+
 /* Weather App Body */
 
 
 
 .containBox{
     margin: 0px 25px 0px 25px !important;
+    padding-top: 70px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
+
 
 .currentBox {
     background-color: #CAE8FF;
     border-radius: 10px;
     opacity: 80%;
-    color:#212A79;
+}
+
+.weatherIcon img{
+    width: 140px;
+    padding-top: 20px;
+}
+
+.margMe{
+    margin-top: 25px;
 }
 
 .currentInfoBox {
@@ -41,9 +54,17 @@ nav {
     opacity: 80%;
 }
 
+.rowSpace{
+    padding-bottom: 20px
+}
+
 .infoText{
     padding-left: 70px;
-    color: #212A79;
+    font-size: large;
+}
+
+.stat{
+    text-indent: 20px;
 }
 
 .downLine{
@@ -51,18 +72,35 @@ nav {
     padding-left: 20px;
 }
 
-.textColor{
-    color: #212A79;
+
+.mapBox{
+    width: 400px;
+    height: 150px;
+    border: 2.5px solid #212A79;
+    border-radius: 10px;
+    margin-top: 25px;
 }
 /* Cards */
 
 .card{
     background-color: #CAE8FF;
-    height: 150px;
+    height: 175px;
     opacity: 80%;
 }
 
 .card-text, .card-title {
-    color:#212A79;
-    font-family: 'Kdam Thmor', sans-serif;
+    color: #212A79;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-text{
+    padding-top: 30px;
+}
+
+.cardRow{
+    padding-top: 20px;
+}
+
+.cardRow i{
+    padding-top: 30px;
 }

@@ -10,164 +10,209 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/Consulting.png" />
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/989c4a6ea8.js" crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/Consulting.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/989c4a6ea8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-
-  <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar">
-      <div class="container">
+      <div class="container fixMarg">
         <a class="navbar-brand" href="#">
-          <img src="./assets/Consulting.png" alt="Bootstrap" width="75px" height="75px">
+          <img
+            src="./assets/Consulting.png"
+            alt="Bootstrap"
+            width="75px"
+            height="75px"
+          />
         </a>
-        
-        <form class="d-flex" role="search">
-          <i class="fa-solid fa-location-dot" style="color: #cae8ff;"></i>
-          <input class="form-control me-2 searchShape" type="search" placeholder="Enter city..." aria-label="Search">
+
+        <form class="d-flex justify-content-end" role="search">
+          <i
+            class="fa-solid fa-location-dot fa-lg pinIcon"
+            style="color: #cae8ff"
+          ></i>
+          <input
+            class="form-control me-2 searchShape"
+            type="search"
+            placeholder="Enter city..."
+            aria-label="Search"
+          />
         </form>
       </div>
     </nav>
 
     <!-- Main body -->
     <div class="container-fluid containBox">
-      <div class="row">
-
-      </div>
+      <!-- Favorites tab -->
+      <div class="row"></div>
+      <!-- Current weather main box -->
       <div class="row">
         <div class="col-3">
           <div class="container-fluid currentBox h-100">
             <div class="row">
               <div class="col">
                 <h5 id="cityName">Stockton, CA</h5>
-                <h3>63&deg; F</h3>
+                <h3 id="currentTemp">63&deg; F</h3>
               </div>
               <div class="col">
-                <p id="highLow">High: 63&deg; <br>Low: 33&deg;</p>
+                <p id="highLow">High: 63&deg; <br />Low: 33&deg;</p>
               </div>
               <div class="col">
                 <i id="favBtn" class="fa-regular fa-star"></i>
               </div>
             </div>
-            <div class="row weatherIcon">
-              <!-- Weather icon will go here -->
+            <div class="row weatherIcon justify-content-center">
+              <img
+                id="mainIcon"
+                src="./assets/moon.png"
+                alt="Current Weather displayed"
+              />
             </div>
           </div>
         </div>
 
+        <!-- Current Info Box -->
         <div class="col-8">
           <div class="container-fluid currentInfoBox h-100">
-          <div class="col">
+            <!-- prec, wind, humi side -->
             <div class="row">
-              <div class="col-1">
-              <i class="fa-solid fa-umbrella fa-2xl downLine"></i>
-            </div>
-            <div class="col pl-0">
-              <h5 class="infoText">Precipitation:</h5>
-              <h5 class="infoText">0%</h5>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-1">
-              <i class="fa-solid fa-wind fa-2xl downLine"></i>
-            </div>
-            <div class="col">
-              <h5 class="infoText">Wind:</h5>
-              <h5 class="infoText">South 3 mph</h5>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-1">
-              <i class="fa-solid fa-droplet fa-2xl downLine"></i>
-            </div>
-            <div class="col">
-              <h5 class="infoText">Humidity:</h5>
-              <h5 class="infoText">30%</h5>
-            </div>
-            </div>
-          </div>
-          <div class="col textColor">
-              <div class="row">
-                <!-- Map will go here using google maps + openweather API -->
+              <div class="col-4">
+                <div class="row rowSpace margMe">
+                  <div class="col-1">
+                    <i class="fa-solid fa-umbrella fa-2xl downLine"></i>
+                  </div>
+                  <div class="col pl-0">
+                    <h5 class="infoText">Precipitation:</h5>
+                    <h5 id="precText" class="infoText stat">0%</h5>
+                  </div>
                 </div>
-              <div class="row">
-                <div class="col">
-                  <h5>Lat: 37.9</h5>
+                <div class="row rowSpace">
+                  <div class="col-1">
+                    <i class="fa-solid fa-wind fa-2xl downLine"></i>
+                  </div>
+                  <div class="col">
+                    <h5 class="infoText">Wind:</h5>
+                    <h5 id="windText" class="infoText stat">South 3 mph</h5>
+                  </div>
                 </div>
-                <div class="col">
-                  <h5>Lon: -121.2</h5>
+                <div class="row">
+                  <div class="col-1">
+                    <i class="fa-solid fa-droplet fa-2xl downLine"></i>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="infoText">Humidity:</h5>
+                    <h5 id="humiText" class="infoText stat">30%</h5>
+                  </div>
                 </div>
               </div>
-              <div class="row"> 
-                <div class="col">
-                  <img src="./assets/sunrise.png" alt="Sunrise" width="60px">
-                  <h5>Sunrise: 6:59</h5>
+
+              <!-- Map and coords -->
+              <div class="col-7 textColor">
+                <!-- Map -->
+                <div class="row">
+                  <div class="container mapBox"></div>
                 </div>
-                <div class="col">
-                  <img src="./assets/moon.png" alt="Sunset Moon" width="45px">
-                  <h5>Sunset: 16:46</h5>
-                </div>  
+                <div class="row">
+                  <div class="col">
+                    <h5 id="latText">Lat: 37.9</h5>
+                  </div>
+                  <div class="col">
+                    <h5 id="lonText">Lon: -121.2</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img
+                      src="./assets/sunrise.png"
+                      alt="Sunrise"
+                      width="60px"
+                    />
+                    <h5 id="riseText">Sunrise: 6:59</h5>
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./assets/moon.png"
+                      alt="Sunset Moon"
+                      width="45px"
+                    />
+                    <h5 id="setText">Sunset: 16:46</h5>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
+      <!-- 5 day forecast -->
       <div class="row cardRow mx-auto">
         <div class="col">
-          <div class="card text-center mb-3" style="width: 8rem;">
+          <div class="card text-center mb-3" style="width: 12rem">
             <div class="card-body">
               <h5 id="day1" class="card-title">Monday</h5>
-              <i class="fa-solid fa-cloud fa-2xl"></i>
-              <p id="day1HL" class="card-text">H: <br>L: </p>
+              <i id="dayIcon1" class="fa-solid fa-cloud fa-2xl"></i>
+              <p id="day1HL" class="card-text">H: <br />L:</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-center mb-3" style="width: 8rem;">
+          <div class="card text-center mb-3" style="width: 12rem">
             <div class="card-body">
               <h5 id="day2" class="card-title">Monday</h5>
-              <i class="fa-solid fa-cloud fa-2xl"></i>
+              <i id="dayIcon2" class="fa-solid fa-cloud fa-2xl"></i>
               <p id="day2HL" class="card-text">H: <br>L: </p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-center mb-3" style="width: 8rem;">
+          <div class="card text-center mb-3" style="width: 12rem">
             <div class="card-body">
               <h5 id="day3" class="card-title">Monday</h5>
-              <i class="fa-solid fa-cloud fa-2xl"></i>
-              <p id="day3HL" class="card-text">H: <br>L: </p>
+              <i id="dayIcon3" class="fa-solid fa-cloud fa-2xl"></i>
+              <p id="day3HL" class="card-text">H: <br />L:</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-center mb-3" style="width: 8rem;">
+          <div class="card text-center mb-3" style="width: 12rem">
             <div class="card-body">
               <h5 id="day4" class="card-title">Monday</h5>
-              <i class="fa-solid fa-cloud fa-2xl"></i>
-              <p id="day4HL" class="card-text">H: <br>L: </p>
+              <i id="dayIcon4" class="fa-solid fa-cloud fa-2xl"></i>
+              <p id="day4HL" class="card-text">H: <br />L:</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-center mb-3" style="width: 8rem;">
+          <div class="card text-center mb-3" style="width: 12rem">
             <div class="card-body">
               <h5 id="day5" class="card-title">Monday</h5>
-              <i class="fa-solid fa-cloud fa-2xl"></i>
-              <p id="day5HL" class="card-text">H: <br>L: </p>
+              <i id="dayIcon5" class="fa-solid fa-cloud fa-2xl"></i>
+              <p id="day5HL" class="card-text">H: <br />L:</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/app.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
+    <script type="module" src="./scripts/forecast.js"></script>
   </body>
 </html>
