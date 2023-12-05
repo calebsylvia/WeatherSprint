@@ -22,12 +22,13 @@ let day4HL = document.getElementById("day4HL");
 let day5HL = document.getElementById("day5HL");
 
 
-navigator.geolocation.getCurrentPosition(forecastCall);
+// navigator.geolocation.getCurrentPosition(forecastCall);
 
-async function forecastCall(position){
-    const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=${weatherKey}`);
-    const data = await promise.json();
-    console.log(data);
-}
+// async function forecastCall(position){
+//     const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=${weatherKey}`);
+//     const data = await promise.json();
+//     console.log(data);
+//     // day1.innerText = data.
+// }
 
-forecastCall();
+// forecastCall();

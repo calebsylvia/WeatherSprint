@@ -1,5 +1,7 @@
 /* Universal */
-
+*{
+    font-family: 'Inter', sans-serif;
+}
 body{
     background-image: url(/assets/cloudyskygif.gif);
     background-repeat: no-repeat;
@@ -10,7 +12,9 @@ body{
 
 nav {
     background-color: #212A79;
+    border-bottom: 1px solid #CAE8FF;
 }
+
 
 .searchShape {
     border-radius: 30px !important;
@@ -23,12 +27,20 @@ nav {
 
 /* Weather App Body */
 
-
+.favTab{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 75px;
+    height: 55px;
+    background-color: #CAE8FF;
+    border: 0px;
+    display: block;
+    margin-left: auto;
+    /* margin-right: 115px; */
+}
 
 .containBox{
-    margin: 0px 25px 0px 25px !important;
-    padding-top: 70px;
-    font-family: 'Inter', sans-serif;
+    padding: 70px 0px 0px 0px !important;
     font-weight: 500;
 }
 
@@ -37,6 +49,22 @@ nav {
     background-color: #CAE8FF;
     border-radius: 10px;
     opacity: 80%;
+    height: 450px;
+}
+
+.padMe {
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+
+
+.sunriseCol, .sunsetCol {
+    text-align: center;
+}
+
+.setText{
+    padding-top: 10px;
 }
 
 .weatherIcon img{
@@ -48,19 +76,31 @@ nav {
     margin-top: 25px;
 }
 
+.highLowtxt{
+    font-size: 20px;
+}
+
 .currentInfoBox {
     background-color: #CAE8FF;
     border-radius: 10px;
     opacity: 80%;
 }
 
+.morePad{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
 .rowSpace{
-    padding-bottom: 20px
+    padding-bottom: 70px
 }
 
 .infoText{
     padding-left: 70px;
-    font-size: large;
+}
+
+.latTxt{
+    text-align: right;
 }
 
 .stat{
@@ -74,23 +114,24 @@ nav {
 
 
 .mapBox{
-    width: 400px;
-    height: 150px;
+    width: 500px;
+    height: 250px;
     border: 2.5px solid #212A79;
     border-radius: 10px;
     margin-top: 25px;
 }
+
 /* Cards */
 
 .card{
     background-color: #CAE8FF;
-    height: 175px;
+    height: 200px;
     opacity: 80%;
+    margin: 0 auto;
 }
 
 .card-text, .card-title {
     color: #212A79;
-    font-family: 'Inter', sans-serif;
 }
 
 .card-text{

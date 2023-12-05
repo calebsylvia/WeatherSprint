@@ -87,3 +87,18 @@ Fifth Commit(12/4/23):
     -Find way to implement map into the webpage
     -Get lowest and highest temps from the 5 day forecast API since they only display for each time frame
     -Find out how to convert into standard time from the UNIX that the API displays in the console
+
+Sixth commit(12/5/23):
+    -Got most of the API data on the screen besides the 5 day forecast data and the precipitation
+    -Created data folder and moved the weatherCon.json file into it
+    -Set up main icon to change with weather description
+    -Set up wind to tell what direction the wind will be in and the speed
+    -Fixed alignment issues and now everything is aligned might need to resize some things
+    -Formatted the HTML code to make it easier for some of the content to work with
+
+    TO-DO for next session:
+    -Figure out how to test for precipitation within the API data
+    -Search bar needs to be figured out ASAP
+    -Resize some of the fonts and box sizes
+    -Unix to Date for day of week for the 5 day forecast
+    -Find solution to getting max and min for the whole day 5 day forecast
