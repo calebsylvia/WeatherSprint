@@ -68,8 +68,12 @@ nav {
 }
 
 .weatherIcon img{
-    width: 140px;
-    padding-top: 20px;
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.weatherIcon{
+    padding-top: 30px;
 }
 
 .margMe{
@@ -92,7 +96,7 @@ nav {
 }
 
 .rowSpace{
-    padding-bottom: 70px
+    padding-bottom: 50px
 }
 
 .infoText{
@@ -104,7 +108,7 @@ nav {
 }
 
 .stat{
-    text-indent: 20px;
+    margin-left: 20px;
 }
 
 .downLine{

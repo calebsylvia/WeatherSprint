@@ -102,3 +102,19 @@ Sixth commit(12/5/23):
     -Resize some of the fonts and box sizes
     -Unix to Date for day of week for the 5 day forecast
     -Find solution to getting max and min for the whole day 5 day forecast
+
+Seventh commit(12/6/23):
+    -Got the days of the week to be displayed 
+    -Finished a function to get proper rain displayed with default of zero if no rain data is shown
+    -Started highs and lows of 5 day forecast going to work on the rest of day
+    -Adjusted size of current weather icon and spacing to help it fit better in container
+    -Reverse geocoded for current position to display correct city name and state on screen
+
+    TO-DO for next session:
+    -Get highs and lows fully functioning as well as the icons for each day by gathering most common weather type for that day
+    -Pull map data from Google Map API with the coords from current position and the coords from any searched for
+    -Get search bar functioning and pull data when needed
+    -Favorite tab is going to be hard but the idea for it (this is a note for Caleb to remember) make a bar that is hidden and toggled on with button click and the button will Y-translate down to be at bottom of bar and cards will appear when a city is added to favorite array 
+    -Look into an autocomplete for search bar to help user narrow down options for what they are looking for
+    
+    Finish date goal: 12/7/23
