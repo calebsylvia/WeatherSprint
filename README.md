@@ -118,3 +118,15 @@ Seventh commit(12/6/23):
     -Look into an autocomplete for search bar to help user narrow down options for what they are looking for
     
     Finish date goal: 12/7/23
+
+Eighth commit(12/7/12):
+    -Finished search bar and made sure name displayed country in case where state is not available
+    -Made snow avaiable instead of precipitation in said case
+    -Got favorite tab pull down to open and close
+    -Adjusted some files and compressed into one JS file
+
+    TO-DO for next session:
+    -Finish by tonight
+    -Get local storage up and running
+    -Display favorites and add function to favorite button
+    -Finish styling

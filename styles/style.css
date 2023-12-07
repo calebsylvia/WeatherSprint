@@ -28,15 +28,94 @@ nav {
 /* Weather App Body */
 
 .favTab{
+    background-color: #CAE8FF !important;
+    border: 0px;
+    padding: 0 !important;
+}
+
+.nav-link{
+    background-color: #CAE8FF !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 75px;
     height: 55px;
-    background-color: #CAE8FF;
-    border: 0px;
-    display: block;
+    padding: 0px 0px 0px 12px !important;
+}
+
+.nav-item{
     margin-left: auto;
-    /* margin-right: 115px; */
+    margin-right: 100px;
+}
+
+.nav-tabs{
+    border-bottom: 0 !important;
+}
+
+.tab-pane{
+    height: 150px;
+    width: 100%;
+    background-color: #CAE8FF;
+}
+
+.box{
+    background-color: #212A79;
+    color:#CAE8FF;
+    border-radius: 10px;
+}
+
+.btn1{
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #CAE8FF;
+    width: 300px;
+    height: 100px;
+    margin: auto auto;
+}
+
+.btn2{
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #CAE8FF;
+    width: 300px;
+    height: 100px;
+    margin: auto auto;
+}
+
+.btn3{
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #CAE8FF;
+    width: 300px;
+    height: 100px;
+    margin: auto auto;
+}
+
+.btn4{
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #CAE8FF;
+    width: 300px;
+    height: 100px;
+    margin: auto auto;
+}
+
+.btn5{
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #CAE8FF;
+    width: 300px;
+    height: 100px;
+    margin: auto auto;
+}
+
+.unFav{
+    color: black;
+}
+
+.fav{
+    color: #FBB750;
 }
 
 .containBox{
@@ -95,6 +174,10 @@ nav {
     padding-right: 20px !important;
 }
 
+.noPad{
+    padding: 0 !important;
+}
+
 .rowSpace{
     padding-bottom: 50px
 }
@@ -117,9 +200,9 @@ nav {
 }
 
 
-.mapBox{
-    width: 500px;
-    height: 250px;
+#map{
+    width: 750px;
+    height: 275px;
     border: 2.5px solid #212A79;
     border-radius: 10px;
     margin-top: 25px;
