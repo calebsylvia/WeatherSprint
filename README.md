@@ -3,8 +3,11 @@
 # 11/28/23
 # Weather Sprint 1
 # Made a weather app that pulls the data from the openweatherAPI to show the weather for current or requested location
-# Peer review:
-
+# Peer reviewer: Leo Garcia
+# Review Notes:
+## Pros: Map works as intended; Temperature, highs, lows, wind speed, humidity, precipitation, forecast icons, lat, long, sunrise and sunset work; Layout looks good; Good choice of favicon; Performance runs well; Precipitation changes to snow when necessary
+## Cons: Favorites bar is broken; Cannot favorite current location; Small navbar gap when scrolling right is visible; Location resets when changing tabs; Background not tinted blue like Figma; Font weight is inconsistent with Figma; Forecast layout does not match Figma; Favorite buttons inconsistent with figma; Takes a few seconds for page to properly load
+## Overall: A pretty good build based on the given prototype, albeit with some elements leaving much to be desired, particularly with favorites and layout elements. Would focus some time on fixing favorites if possible
 
 
 
@@ -130,3 +133,12 @@ Eighth commit(12/7/12):
     -Get local storage up and running
     -Display favorites and add function to favorite button
     -Finish styling
+
+Ninth commit(12/8/23):
+    -Did not finish could not figure out how to get favorites bar functioning with real time data updates
+
+    TO-DO for life:
+    -Don't add things to figma you aren't sure youre going to figure out
+    -Clean up code
+    -Fix this project and make it better
+    

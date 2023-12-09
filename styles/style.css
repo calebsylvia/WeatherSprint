@@ -15,14 +15,26 @@ nav {
     border-bottom: 1px solid #CAE8FF;
 }
 
+.navbar-brand img{
+    margin-left: 30px;
+}
 
 .searchShape {
     border-radius: 30px !important;
     height: 25px;
 }
 
+.moveMe{
+    margin-right: 20px;
+}
+
 .fixMarg{
     margin: 0px 25px !important;
+}
+
+.pinIcon{
+    padding-top: 10px;
+    padding-right: 5px;
 }
 
 /* Weather App Body */
@@ -46,7 +58,7 @@ nav {
 
 .nav-item{
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .nav-tabs{
@@ -73,8 +85,8 @@ nav {
 .btn1{
     border-radius: 10px;
     border: 0 !important;
-    background-color: #CAE8FF;
-    width: 300px;
+    background-color: #212A79;
+    width: 200px;
     height: 100px;
     margin: auto auto;
 }
@@ -82,8 +94,8 @@ nav {
 .btn2{
     border-radius: 10px;
     border: 0 !important;
-    background-color: #CAE8FF;
-    width: 300px;
+    background-color: #212A79;
+    width: 200px;
     height: 100px;
     margin: auto auto;
 }
@@ -91,8 +103,8 @@ nav {
 .btn3{
     border-radius: 10px;
     border: 0 !important;
-    background-color: #CAE8FF;
-    width: 300px;
+    background-color: #212A79;
+    width: 200px;
     height: 100px;
     margin: auto auto;
 }
@@ -100,8 +112,8 @@ nav {
 .btn4{
     border-radius: 10px;
     border: 0 !important;
-    background-color: #CAE8FF;
-    width: 300px;
+    background-color: #212A79;
+    width: 200px;
     height: 100px;
     margin: auto auto;
 }
@@ -109,10 +121,14 @@ nav {
 .btn5{
     border-radius: 10px;
     border: 0 !important;
-    background-color: #CAE8FF;
-    width: 300px;
+    background-color: #212A79;
+    width: 200px;
     height: 100px;
     margin: auto auto;
+}
+
+.star{
+    margin-left: 20px;
 }
 
 .unFav{
@@ -157,7 +173,7 @@ nav {
 }
 
 .weatherIcon{
-    padding-top: 30px;
+    padding-top: 50px;
     padding-right: 20px;
 }
 

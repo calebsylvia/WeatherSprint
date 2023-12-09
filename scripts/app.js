@@ -42,9 +42,31 @@ let day3HL = document.getElementById("day3HL");
 let day4HL = document.getElementById("day4HL");
 let day5HL = document.getElementById("day5HL");
 
+//Declaring card title variables
+let boxOneName = document.getElementById("boxOneName");
+let boxTwoName = document.getElementById("boxTwoName");
+let boxThreeName = document.getElementById("boxThreeName");
+let boxFourName = document.getElementById("boxFourName");
+let boxFiveName = document.getElementById("boxFiveName");
+
+//Declaring card temp variables
+let boxOneTemp = document.getElementById("boxOneTemp");
+let boxTwoTemp = document.getElementById("boxTwoTemp");
+let boxThreeTemp = document.getElementById("boxThreeTemp");
+let boxFourTemp = document.getElementById("boxFourTemp");
+let boxFiveTemp = document.getElementById("boxFiveTemp");
+
+//Declaring card high and low variables
+let boxOneHL = document.getElementById("boxOneHL");
+let boxTwoHL = document.getElementById("boxTwoHL");
+let boxThreeHL = document.getElementById("boxThreeHL");
+let boxFourHL = document.getElementById("boxFourHL");
+let boxFiveHL = document.getElementById("boxFiveHL");
+
 //Declaring lat and lon variables
 let lat;
 let lon;
+let cityID;
 
 //Mode function for the most frequent weather description
 function mostFrequent(arr, n) {
@@ -149,12 +171,6 @@ async function success(position) {
     console.log(searchedCity);
     lat = searchedCity[0].lat;
     lon = searchedCity[0].lon;
-
-    // for(let i = 0; i < localStorage.length;i++){
-    //   if(searchedCity){
-
-    //   }
-    // }
   } else {
     //Setting lat and lon from geolocation position.coords
     lat = position.coords.latitude;
@@ -303,6 +319,8 @@ async function success(position) {
     let city = data[0].name;
     let country = data[0].country;
     let state = data[0].state;
+
+    cityID = data[0].name;
 
     if (!data[0].state) {
       cityName.innerText = `${city}, ${country}`;
@@ -456,43 +474,51 @@ async function success(position) {
     iconChange(day5Freq, dayIcon5);
   }
   forecastCall();
-
-  //Declaring card title variables
-  let boxOneName = document.getElementById("boxOneName");
-  let boxTwoName = document.getElementById("boxTwoName");
-  let boxThreeName = document.getElementById("boxThreeName");
-  let boxFourName = document.getElementById("boxFourName");
-  let boxFiveName = document.getElementById("boxFiveName");
-
-  //Declaring card temp variables
-  let boxOneTemp = document.getElementById("boxOneTemp");
-  let boxTwoTemp = document.getElementById("boxTwoTemp");
-  let boxThreeTemp = document.getElementById("boxThreeTemp");
-  let boxFourTemp = document.getElementById("boxFourTemp");
-  let boxFiveTemp = document.getElementById("boxFiveTemp");
-
-  //Declaring card high and low variables
-  let boxOneHL = document.getElementById("boxOneHL");
-  let boxTwoHL = document.getElementById("boxTwoHL");
-  let boxThreeHL = document.getElementById("boxThreeHL");
-  let boxFourHL = document.getElementById("boxFourHL");
-  let boxFiveHL = document.getElementById("boxFiveHL");
-
-  favBtn.addEventListener("click", function (e) {
-    favBtn.classList.toggle("unFav");
-    favBtn.classList.toggle("fav");
-    favBtn.classList.toggle("fa-regular");
-    favBtn.classList.toggle("fa-solid");
-
-    if (favBtn.classList.contains("fav")) {
-      localStorage.setItem(cityName.textContent, cityName.textContent);
-    } else {
-      localStorage.removeItem(cityName.textContent);
-    }
-  });
 }
 
+let favorites = [];
 //Error function if something errors out it will display to user what the error is
 async function errorFunction(error) {
   alert(error.message);
 }
+
+
+favBtn.addEventListener("click", function (e) {
+
+  if (favorites.length === 0) {
+    favorites.push(cityID);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    boxOneName.innerText = favorites[0];
+    return 0;
+  } 
+  if(favorites.includes(cityID)){
+    favorites.pop(cityID);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    if(favorites.length === 0){
+        boxOneName.innerText = '';
+    }
+  }else if(favorites.length === 1){
+    favorites.push(cityID);
+    localStorage.setItem('favorites', JSON.stringify(cityID));
+    boxTwoName.innerText = favorites[1];
+  }else if(favorites.length === 2){
+    favorites.push(cityID);
+    localStorage.setItem('favorites', JSON.stringify(cityID));
+    boxThreeName.innerText = favorites[2];
+  }
+  else if(favorites.length === 3){
+    favorites.push(cityID);
+    localStorage.setItem('favorites', JSON.stringify(cityID));
+    boxFourName.innerText = favorites[3];
+  }else if(favorites.length === 4){
+    favorites.push(cityID);
+    localStorage.setItem('favorites', JSON.stringify(cityID));
+    boxFiveName.innerText = favorites[4];
+  }else{
+    alert('Only 5 favorites at a time! Remove one to display');
+  }
+
+
+});
+
+console.log(favorites);
